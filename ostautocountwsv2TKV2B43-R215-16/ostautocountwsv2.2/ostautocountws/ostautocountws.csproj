@@ -71,107 +71,114 @@
     <StartupObject>ostautocountws.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoCount, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.2.2.26\lib\net48\AutoCount.dll</HintPath>
+    <Reference Include="AutoCount">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.dll</HintPath>
     </Reference>
-    <Reference Include="AutoCount.Accounting, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Accounting.2.2.26\lib\net48\AutoCount.Accounting.dll</HintPath>
+    <Reference Include="AutoCount.Accounting">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Accounting.dll</HintPath>
     </Reference>
-    <Reference Include="AutoCount.Accounting.UI, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Accounting.UI.2.2.26\lib\net48\AutoCount.Accounting.UI.dll</HintPath>
+    <Reference Include="AutoCount.Accounting.UI">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Accounting.UI.dll</HintPath>
     </Reference>
-    <Reference Include="AutoCount.ARAP, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.ARAP.2.2.26\lib\net48\AutoCount.ARAP.dll</HintPath>
+    <Reference Include="AutoCount.ARAP">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.ARAP.dll</HintPath>
     </Reference>
-    <Reference Include="AutoCount.BusinessFlow, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.BusinessFlow.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.DataUpgrade, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.DataUpgrade.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.EInvoice, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.EInvoice.2.2.26\lib\net48\AutoCount.EInvoice.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.EInvoice.Singapore, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.EInvoice.Singapore.2.2.26\lib\net48\AutoCount.EInvoice.Singapore.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.FinancialReport, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.FinancialReport.2.2.26\lib\net48\AutoCount.FinancialReport.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.GeneralMaint, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.GeneralMaint.2.2.26\lib\net48\AutoCount.GeneralMaint.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.GL, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.GL.2.2.26\lib\net48\AutoCount.GL.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoCount.GST, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.GST.2.2.26\lib\net48\AutoCount.GST.dll</HintPath>
+    <Reference Include="AutoCount.GL">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.GL.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Image100p, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Image100p.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Image100p.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Image125p, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Image125p.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Image125p.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Image150p, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Image150p.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Image150p.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Image175p, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Image175p.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Image175p.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Image200p, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Image200p.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Image200p.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Image500p, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Image500p.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Image500p.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Images, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.Images.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Images.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.ImportExport, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.ImportExport.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.ImportExport.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Inquiry, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Inquiry.2.2.26\lib\net48\AutoCount.Inquiry.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Inquiry.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Invoicing, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Invoicing.2.2.26\lib\net48\AutoCount.Invoicing.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Invoicing.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.MainEntry, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.MainEntry.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.MainEntry.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoCount.MainEntry.XmlSerializers">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.MainEntry.XmlSerializers.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.ManageAccountBook, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.ManageAccountBook.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.ManageAccountBook.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.ManagementStudio, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.ManagementStudio.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.ManagementStudio.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Manufacturing, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Manufacturing.2.2.26\lib\net48\AutoCount.Manufacturing.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Manufacturing.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Purchase, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Purchase.2.2.26\lib\net48\AutoCount.Purchase.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Purchase.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Sales, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Sales.2.2.26\lib\net48\AutoCount.Sales.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Sales.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.StartScreen, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.MainEntry.2.2.26\lib\net48\AutoCount.StartScreen.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.StartScreen.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Stock, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Stock.2.2.26\lib\net48\AutoCount.Stock.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Stock.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.StockMaint, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.StockMaint.2.2.26\lib\net48\AutoCount.StockMaint.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.StockMaint.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Tax.Philippines, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Tax.Philippines.2.2.26\lib\net48\AutoCount.Tax.Philippines.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Tax.Philippines.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.Tools, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.Tools.2.2.26\lib\net48\AutoCount.Tools.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.Tools.dll</HintPath>
     </Reference>
     <Reference Include="AutoCount.UI, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoCount2.UI.2.2.26\lib\net48\AutoCount.UI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoCount.UI.XmlSerializers">
+      <HintPath>C:\Program Files\AutoCount\Accounting 2.2\AutoCount.UI.XmlSerializers.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>

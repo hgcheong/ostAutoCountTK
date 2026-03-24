@@ -22,10 +22,14 @@ namespace ostautocountws.Controller
             {
                 if (trans.Count() > 0)
                 {
-           
+
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     JournalEntryCommand cmd = JournalEntryCommand.Create(SettingsMain.MyDbSession, SettingsMain.MydbSetting);
-
-
+                    
+                    
                     //Because of posting by batch if the transaction was using separate date it so we get distinct list of transaction date from the system
 
                     //separate by trans date
@@ -74,7 +78,7 @@ namespace ostautocountws.Controller
 
             catch (Exception ex)
             {
-
+                
                 SettingsMain.MLogger.Error(ex.Message + ex.StackTrace);
                 return InternalServerError(ex);
             }

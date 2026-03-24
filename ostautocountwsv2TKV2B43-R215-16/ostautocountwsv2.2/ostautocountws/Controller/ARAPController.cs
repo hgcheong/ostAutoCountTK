@@ -33,6 +33,10 @@ namespace ostautocountws.Controller
             {
                 if (invoice.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     APInvoiceDataAccess apInvoiceDA = APInvoiceDataAccess.Create(SettingsMain.MyDbSession, SettingsMain.MydbSetting);
 
 
@@ -70,6 +74,10 @@ namespace ostautocountws.Controller
 
                 if (invoice.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     APCNDataAccess apCnDa = APCNDataAccess.Create(SettingsMain.MyDbSession, SettingsMain.MydbSetting);
 
                     try
@@ -122,6 +130,10 @@ namespace ostautocountws.Controller
             {
                 if (invoice.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
 
                     List<string> disInv = invoice.Select(c => c.DocNo).Distinct().ToList();
 		
@@ -184,7 +196,10 @@ namespace ostautocountws.Controller
             {
                 if (invoice.Count() > 0)
                 {
-
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
 
                     List<string> disInv = invoice.Select(c => c.DocNo).Distinct().ToList();
 		
@@ -264,6 +279,10 @@ namespace ostautocountws.Controller
             {
                 if (srcpayment.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     cdeposit _srcPayment = srcpayment[0];
 
                     bool executeCancel = false;
@@ -400,6 +419,7 @@ namespace ostautocountws.Controller
 
         private string getPaymentMethod(string accno)
         {
+
             using (SqlConnection cnn = new SqlConnection(SettingsMain.MydbSetting.ConnectionString))
             {
                 var myPayment = cnn.Query<cpaymentMethod>("select * from PaymentMethod where upper(BankAccount) = @BankAccount ", new { BankAccount = accno });
@@ -553,6 +573,10 @@ namespace ostautocountws.Controller
             {
                 if (srcpayment.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     cpayment _srcPayment = srcpayment[0];
                     using (SqlConnection cnn = new SqlConnection(SettingsMain.MydbSetting.ConnectionString))
                     {
@@ -705,6 +729,10 @@ namespace ostautocountws.Controller
             {
                 if (srcpayment.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     cpayment _srcPayment = srcpayment[0];
 
 
@@ -834,6 +862,10 @@ namespace ostautocountws.Controller
         {
             try
             {
+                if (!SettingsMain.MyDbSession.IsLogin)
+                {
+                    SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                }
                 ARCNDataAccess arCnDa = ARCNDataAccess.Create(SettingsMain.MyDbSession, SettingsMain.MydbSetting);
                 ARCNEntity toDelete = null;
                 try
@@ -884,6 +916,10 @@ namespace ostautocountws.Controller
                 //SettingsMain.MLogger.Info(DocNo.INVOICENUMBER);
                 if (srcpayment.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     cnKnockOff _srcPayment = srcpayment[0];
                     ARCNDataAccess arCnDa = ARCNDataAccess.Create(SettingsMain.MyDbSession, SettingsMain.MydbSetting);
                     ARCNEntity toApply = null;
@@ -947,6 +983,10 @@ namespace ostautocountws.Controller
             {
                 if (srcpayment.Count() > 0)
                 {
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     cpayment _srcPayment = srcpayment[0];
           
                     bool executeCancel = false;
@@ -1334,7 +1374,10 @@ namespace ostautocountws.Controller
             {
                 if (invoice.Count() > 0)
                 {
-
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
 
                     List<string> disInv = invoice.Select(c => c.DocNo).Distinct().ToList();
                     foreach (var dis in disInv)
@@ -1411,7 +1454,10 @@ namespace ostautocountws.Controller
             {
                 if (invoice.Count() > 0)
                 {
-
+                    if (!SettingsMain.MyDbSession.IsLogin)
+                    {
+                        SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                    }
                     List<string> disInv = invoice.Select(c => c.DocNo).Distinct().ToList();
 
                     foreach (var dis in disInv)
