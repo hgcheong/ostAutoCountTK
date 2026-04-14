@@ -1390,7 +1390,7 @@ namespace ostautocountws.Controller
                         _invoiceToAdd.DebtorCode = _srcInvoice.DebtorCode;
                         _invoiceToAdd.DisplayTerm = _srcInvoice.DisplayTerm;
                         _invoiceToAdd.DocDate = _srcInvoice.DocDate;
-
+                       
                         if (!string.IsNullOrWhiteSpace(_srcInvoice.CURRENCYCODE))
                         {
                             _invoiceToAdd.CurrencyCode = _srcInvoice.CURRENCYCODE;
@@ -1421,6 +1421,7 @@ namespace ostautocountws.Controller
                             arInvoiceDetail.Description = item.Description;
                             arInvoiceDetail.TaxCode = item.TaxType;
                             arInvoiceDetail.TaxRate = item.TaxRate;
+                       
                             //         arInvoiceDetail.Tax = item.Tax;
                             arInvoiceDetail.Amount = item.Amount;
                         }
@@ -1476,6 +1477,8 @@ namespace ostautocountws.Controller
                         _invoiceToAdd.RefNo2 = _srcInvoice.BATCHFILENO;
                         //_invoiceToAdd.Description = "Batch No:" + _srcInvoice.BATCHFILENO;
                         _invoiceToAdd.Description = "Credit Note";
+                        _invoiceToAdd.SubmitEInvoice = false;
+                        _invoiceToAdd.ConsolidatedEInvoice = false;
                         if (!string.IsNullOrWhiteSpace(_srcInvoice.CURRENCYCODE))
                         {
                             _invoiceToAdd.CurrencyCode = _srcInvoice.CURRENCYCODE;
@@ -1489,6 +1492,7 @@ namespace ostautocountws.Controller
                             arInvoiceDetail.ProjNo = item.ProjNo;
                             arInvoiceDetail.TaxCode = item.TaxType;
                             arInvoiceDetail.TaxRate = item.TaxRate;
+                            arInvoiceDetail.Classification = "022";
                    //         arInvoiceDetail.Tax = item.Tax;
                             arInvoiceDetail.Amount = item.Amount;
                         }
