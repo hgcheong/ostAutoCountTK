@@ -81,9 +81,12 @@ namespace ostautocountws
             try
             {
 
+                if (!SettingsMain.MyDbSession.IsLogin)
+                {
+                    SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                }
 
 
-               
                 bool isInserting = false;
                 string newDebtorAccountNo = string.Empty;
                 string CompanyName = string.Empty;
@@ -201,6 +204,10 @@ namespace ostautocountws
         {
             try
             {
+                if (!SettingsMain.MyDbSession.IsLogin)
+                {
+                    SettingsMain.MyDbSession.Login(SettingsMain.DefaultAutoCountID, SettingsMain.DefaultAutoCountPWD);
+                }
                 CreditorDataAccess creditorDA = CreditorDataAccess.Create(SettingsMain.MyDbSession, SettingsMain.MydbSetting);
                 bool isInserting = false;
                 string newCreditorAccountNo = string.Empty;

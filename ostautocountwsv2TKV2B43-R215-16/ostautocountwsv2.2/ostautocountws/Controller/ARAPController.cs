@@ -295,7 +295,7 @@ namespace ostautocountws.Controller
                     {
                        
                         doc = cmd.Edit(_srcPayment.DocNo); 
-                        if(doc.Cancelled)
+                        if(doc!=null && doc.Cancelled)
                         {
                             executeUncancel = true;
                             doc.ClearDetails();
